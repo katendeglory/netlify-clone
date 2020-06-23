@@ -5,7 +5,8 @@
   "license": "MIT",
   "scripts": {
     "build": "postcss lib/tailwind.css -o public/css/tailwind.css",
-    "watch": "postcss lib/tailwind.css -o public/css/tailwind.css --watch"
+    "watch": "postcss lib/tailwind.css -o public/css/tailwind.css --watch",
+    "deploy": "git add . && git commit -am \"initial commit\" && git push"
   },
   "devDependencies": {
     "autoprefixer": "^9.8.0",
