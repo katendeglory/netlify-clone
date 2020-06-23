@@ -6,10 +6,12 @@
   "scripts": {
     "build": "postcss lib/tailwind.css -o public/css/tailwind.css",
     "watch": "postcss lib/tailwind.css -o public/css/tailwind.css --watch",
-    "deploy": "git add . && git commit -am \"initial commit\" && git push"
+    "deploy": "git add . && git commit -am \"initial commit\" && git push",
+    "purge": "cross-env NODE_ENV=production yarn run build"
   },
   "devDependencies": {
     "autoprefixer": "^9.8.0",
+    "cross-env": "^7.0.2",
     "postcss-cli": "^7.1.1",
     "tailwindcss": "^1.4.6"
   }
